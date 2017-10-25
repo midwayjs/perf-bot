@@ -1,0 +1,21 @@
+{
+  "name": "perf-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "bootstrap": "npm update;cd frameworks;for dir in $(ls);do cd $dir; npm update; cd ..;done"
+  },
+  "author": "Adam L <skyros@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autocannon": "^0.16.5",
+    "chalk": "^2.3.0",
+    "debug": "^3.1.0",
+    "tree-kill": "^1.2.0"
+  },
+  "engines": {
+    "node": ">= 8.7.0"
+  }
+}

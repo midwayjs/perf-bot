@@ -1,0 +1,14 @@
+{
+  "frameworks": [
+    {
+      "name": "Egg 3",
+      "cwd": "frameworks/egg-3",
+      "command": "npm",
+      "args": "start",
+      "port": 7001,
+      "exit": "npm stop",
+      "url": "/",
+      "skip": false
+    }
+  ]
+}
