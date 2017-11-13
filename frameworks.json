@@ -2,7 +2,7 @@
   "frameworks": [
     {
       "name": "Egg 3",
-      "cwd": "frameworks/egg-3",
+      "cwd": "apps/egg-3",
       "command": "npm",
       "args": "start",
       "port": 7001,
