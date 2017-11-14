@@ -28,7 +28,7 @@ const cannon = (port, url) => {
 (async () => {
   const frameworks = require('./frameworks').frameworks;
   for (const fw of frameworks) {
-    let {cwd, name, command, args, url, port, delay, exit, skip} = fw;
+    let {cwd, name, command, url, port, delay, exit, skip} = fw;
 
     if (skip) {
       continue;
@@ -39,8 +39,10 @@ const cannon = (port, url) => {
       continue;
     }
 
-    args = args.split(/\s+/);
-    let child = spawn(command, args, {cwd});
+    command  = command.split(/\s+/);
+    const cmd = command.shift();
+    const args  = command;
+    let child = spawn(cmd, args, {cwd});
 
     child.on('error', err => {
       console.error(err);
