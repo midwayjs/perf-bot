@@ -1,0 +1,7 @@
+{
+  "name": "fastify",
+  "version": "0.0.1",
+  "dependencies": {
+    "fastify": "^0.33.0"
+  }
+}

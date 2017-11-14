@@ -1,6 +1,33 @@
 {
   "frameworks": [
     {
+      "name": "Fastify",
+      "cwd": "apps/fastify",
+      "command": "node",
+      "args": "index",
+      "port": 3000,
+      "url": "/",
+      "skip": false
+    },
+    {
+      "name": "Koa 2",
+      "cwd": "apps/koa2",
+      "command": "node",
+      "args": "index",
+      "port": 3000,
+      "url": "/",
+      "skip": false
+    },
+    {
+      "name": "ThinkJS",
+      "cwd": "apps/thinkjs",
+      "command": "npm",
+      "args": "start",
+      "port": 8360,
+      "url": "/",
+      "skip": false
+    },
+    {
       "name": "Egg 3",
       "cwd": "apps/egg-3",
       "command": "npm",
