@@ -26,9 +26,9 @@ const cannon = (port, url) => {
 
 
 (async () => {
-  const frameworks = require('./frameworks').frameworks;
-  for (const fw of frameworks) {
-    let {cwd, name, command, url, port, delay, exit, skip} = fw;
+  const apps = require('./apps').apps;
+  for (const app of apps) {
+    let {cwd, name, command, url, port, delay, exit, skip} = app;
 
     if (skip) {
       continue;

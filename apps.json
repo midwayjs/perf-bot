@@ -1,5 +1,5 @@
 {
-  "frameworks": [
+  "apps": [
     {
       "name": "Fastify",
       "cwd": "apps/fastify",

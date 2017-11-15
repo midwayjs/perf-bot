@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "bootstrap": "npm update;cd frameworks;for dir in $(ls);do cd $dir; npm update; cd ..;done"
+    "bootstrap": "rm -rf node_modules;npm i;cd apps;for dir in $(ls);do cd $dir; rm -rf node_modules; npm i; cd ..;done"
   },
   "author": "Adam L <skyros@gmail.com>",
   "license": "MIT",
